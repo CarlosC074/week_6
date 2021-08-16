@@ -21,6 +21,7 @@
 }
 
 #search-box {
+    padding-bottom: 40px;
     border-bottom: 4px solid black;
 }
 
@@ -32,3 +33,8 @@
     display: flex;
     justify-content: center;
 }
+
+#todayCast {
+    outline: 5px solid black;
+}
+
