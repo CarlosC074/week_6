@@ -1,0 +1,34 @@
+#top-bar {
+    background-color: rgb(54, 110, 231);
+    padding: 4em 0 4em 0;
+}
+
+#top-bar-content {
+    color: white;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-container {
+    margin: 20px 0 0 0;
+}
+
+#button-label {
+    display: flex;
+    justify-content: center;
+}
+
+#search-box {
+    border-bottom: 4px solid black;
+}
+
+.prevSearch {
+    background-color: gray;
+    border-radius: 10px;
+    font-size: 18pt;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather page</title>
+    <link rel= "stylesheet" href= "assets/css/reset.css">
+    <link rel= "stylesheet" href= "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel= "stylesheet" href= "assets/css/style.css">
+</head>
+
+<header>
+    <div id= "top-bar">
+    <p><strong id= "top-bar-content">Type in a City and see the weather there!</strong></p>
+    </div>
+</header>
+<body>
+    <!-- container with search section, 
+   current weather report, past searches (button elements),
+and weekly forecast -->
+<div class= "tile is-ancestor" id= "main-container">
+    <div class= "tile is-parent is-vertical is-3">
+        <!--search box-->
+         <div class= "tile is-child" id= "search-box">
+            <p class= "title" id= "button-label">search</p>
+            <input class= "input is-medium" type="text" placeholder="city name">
+            <br>
+         </div>
+        <!--previous searches box--> 
+         <div class= "tile is-child">
+            <div class= "prevSearch">text</div>
+         </div>
+    </div>
+    <div class= "tile is-parent is-vertical">
+        <!--current weather forecast box-->
+        <div class= "tile is-child box">
+            <p></p>
+        </div>
+        <!--weekly forecast table-->
+        <div class= "tile is-child box">
+            <p></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
