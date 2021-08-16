@@ -38,3 +38,18 @@
     outline: 5px solid black;
 }
 
+.fiveDay {
+    text-decoration: underline;
+}
+
+.forecastCard {
+    background-color: rgb(44, 97, 196);
+    margin: 0 2% 0 2%;
+    padding: 1% 0 1% 0;
+}
+
+.forecastCard > p {
+    color: cornsilk;
+    display: flex;
+    justify-content: center;
+}
