@@ -8,6 +8,7 @@
     <link rel= "stylesheet" href= "assets/css/reset.css">
     <link rel= "stylesheet" href= "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel= "stylesheet" href= "assets/css/style.css">
+
 </head>
 
 <header>
@@ -24,9 +25,9 @@ and weekly forecast -->
         <!--search box-->
          <div class= "tile is-child" id= "search-box">
             <p class= "title" id= "button-label">search</p>
-            <input class= "input is-medium" type="text" placeholder="city name">
+            <input class= "input is-medium" type="text" placeholder="city name" id= "cityName">
             <div class = "control">
-                <button class="button is-link is-fullwidth">Submit</button>
+                <button class="button is-link is-fullwidth" id= "submitBtn">Submit</button>
             </div>
             <br>
          </div>
@@ -44,10 +45,7 @@ and weekly forecast -->
             <p class="title fiveDay">5 Day Forecast: </p>
             <!--Forecast cards go here-->
                 <div class= "columns is-mobile">
-                    <div class= "column forecastCard">
-                        <p class= "title">Sample text</p>
-                        <p>Lorem ipsum</p>
-                    </div>
+                    <div class= "column forecastCard"></div>
                     <div class= "column forecastCard"></div>
                     <div class= "column forecastCard"></div>
                     <div class= "column forecastCard"></div>
@@ -57,5 +55,6 @@ and weekly forecast -->
         </div>
     </div>
 </div>
+<script src="./assets/script/script.js"></script>
 </body>
 </html>

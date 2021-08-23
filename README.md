@@ -1,2 +1,2 @@
 # week_6
-Using the One Call weather API, this page is to demonstrate my skills with interacting with server side-API's for client-side use.  
+Using the One Call weather API, this page is to demonstrate my skills with interacting with server side-API's for client-side use. Collected weather information will recieve a user's input to search for a city, then the result of clicking the submit button will display The current day's weather report. Anoter section of the web page will display weather summaries from a forecast for the next five days. 
