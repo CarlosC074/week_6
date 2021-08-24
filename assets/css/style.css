@@ -47,6 +47,14 @@
     outline: 5px solid black;
 }
 
+h1 {
+    font-size: 36pt;
+}
+
+.currentReport {
+    font-size: 18pt;
+}
+
 .fiveDay {
     text-decoration: underline;
 }

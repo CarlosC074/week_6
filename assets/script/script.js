@@ -16,9 +16,10 @@ Date.prototype.addDays = function (days) {
     return date;
   }
 
-function tryFetch() {
+function fetchAllInfo() {
     var key = `3b6a9b93ec05be94df96f081c52c8ee3`;
-    var url = `https://api.openweathermap.org/data/2.5/weather?q=Sacramento&appid=${key}`;
+    var city = cityName.value;
+    var url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`;
     fetch(url) 
     .then(function(response){
         return response.json();
@@ -30,7 +31,6 @@ function tryFetch() {
         fetchOneCall(cityLon, cityLat);
         
     })
-
 }
 
 function fetchOneCall(x,y) {
@@ -44,7 +44,18 @@ function fetchOneCall(x,y) {
         })
         .then(function(oneCall) {
             console.log(oneCall);
+            //Current report window
+            const namedCity =  cityName.value.charAt(0).toUpperCase() + cityName.value.slice(1);
+            namedCityTitle = document.getElementsByTagName("h1");
+            namedCityTitle[0].innerHTML = `${namedCity}  ${date}`;
+            //
+
+
+            
+            
+
+
         })
 }
 
-tryFetch();
+submitBtn.addEventListener("click", fetchAllInfo);
