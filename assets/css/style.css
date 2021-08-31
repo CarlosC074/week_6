@@ -32,6 +32,7 @@
     font-weight: 700;
     display: flex;
     justify-content: center;
+    margin: 10px 0 10px 0;
 }
 
 .prevSearch:hover {
@@ -53,6 +54,21 @@ h1 {
 
 .currentReport {
     font-size: 18pt;
+}
+
+.uviSafe {
+    color: white;
+    background-color: green;
+}
+
+.uviWarning {
+    color: white;
+    background-color: yellow;
+}
+
+.uviDanger {
+    color: white;
+    background-color: red;
 }
 
 .fiveDay {
