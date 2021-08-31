@@ -90,9 +90,27 @@ function fetchOneCall(x,y) {
             prevSearches.appendChild(prevSearchTab);
             //5 day forecast
             for (i = 0; i < forecastCards.length; i++){
+                //declare the nodes to be modified
+                 const fdate = document.getElementsByClassName("forecastDate");
+                 const forecastDate = fdate[i];
+                 const fTemp = document.getElementsByClassName("forecastTemp");
+                 const forecastTemp = fTemp[i];
+                 const fWind = document.getElementsByClassName("forecastWind");
+                 const forecastWind = fWind[i];
+                 const fHumidity = document.getElementsByClassName("forecastHumidity");
+                 const forecastHumidity = fHumidity[i];
+                //add date of future day
                 const cardDate = d.addDays(i + 1).toLocaleDateString("en-US");
-                cons
-
+                forecastDate.innerHTML = cardDate;
+                //add midday temperature of future day
+                const cardTemp = Math.floor(oneCall.daily[i].temp.day);
+                forecastTemp.innerHTML = `temp: ${cardTemp}°F`;
+                //add wind speed of future day
+                const cardWind = oneCall.daily[i].wind_speed;
+                forecastWind.innerHTML = `wind speed: ${cardWind} m/ph`;
+                //add humidity of future day
+                const cardHumidity = oneCall.daily[i].humidity
+                forecastHumidity.innerHTML = `humidity: ${cardHumidity}%`;
 
             }
 
